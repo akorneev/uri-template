@@ -4,4 +4,8 @@ scala:
 jdk:
   - openjdk8
 
-script: sbt ++$TRAVIS_SCALA_VERSION test
+script:
+  - sbt ++$TRAVIS_SCALA_VERSION coverage test
+  - sbt coverageReport
+  - sbt coverageAggregate
+  - sbt codacyCoverage
