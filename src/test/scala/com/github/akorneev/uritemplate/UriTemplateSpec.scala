@@ -1,8 +1,9 @@
 package com.github.akorneev.uritemplate
 
-import org.scalatest.{FreeSpec, Matchers}
+import org.scalatest.freespec.AnyFreeSpec
+import org.scalatest.matchers.should.Matchers
 
-class UriTemplateSpec extends FreeSpec with Matchers {
+class UriTemplateSpec extends AnyFreeSpec with Matchers {
   "UriTemplate" - {
     "should handle all examples from  RFC 6570" - {
       "Level 1 examples" - {
